@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+}
+
+:root{
+    --para: rgba(255, 255, 255, 0.589);
+    --fons:1.5vw;
+    --pages-padding:10px 5vw;
+    }
+    
+
+html, body{
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+.main{
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+.destination-container{
+    padding: var(--pages-padding);
+margin: 2vw 0;
+  }
+
+  .destination-container h1{
+    margin: 1.5vw 0;
+border-bottom: .5px solid gray;
+display: inline-block;
+  }
+
+
+  .destination-container h2{
+    margin: 1vw 0;
+    }
+  
+  .destination-card{
+    width: 100%;
+   height: 70%;
+
+  }
+  .img-para{
+    display: flex;
+    width: 100%;
+  }
+  
+  .destination-card .img-container{
+    width: 100%;
+    display: flex;
+  align-items: center;
+  overflow: hidden;
+  }
+  
+  
+  .destination-card img{
+    max-width: 100%;
+   height: 400px;
+   transition: .5s;
+   border-radius: 15px;
+}
+
+.destination-card img:hover{
+    scale: 1.09;
+cursor: pointer;
+}
+
+    
+
+
+  .destination-card p{
+    width: 100%;
+    margin-left: 20px;
+    font-size: 1.5vw;
+position: relative;
+top: 2vw;
+  }
+
+  .destination-card  button{
+    padding: .6vw 2vw;
+margin:0 4vw;
+
+position: absolute;
+top: 13vw;
+border: .4px solid gray;
+font-size: 1vw;
+  }
+
+  .destination-card button:hover{
+    cursor: pointer;
+    background-color: #3B3939;
+    color: white;
+    border: none;
+  }
+  
+
+  .right-img h2{
+    margin-top: 5vw;
+  }
+
+  .right-card{
+    display: flex;
+    width: 100%;
+    height: 55vh;
+  }
+
+  .right-card .paragraph{
+    width: 50%;
+  }
+
+  .right-card .paragraph p{
+    font-size: var(--fons);
+    font-family: p;
+    margin-right: 2vw;
+  }
+
+.right-card button{
+    padding: .5vw 2vw;
+    font-size: 1.1vw;
+    margin-top: 5vw;
+    margin-left: 5vw;
+}
+
+
+.right-card button:hover{
+    cursor: pointer;
+    background-color: #3B3939;
+    color: white;
+    border: none;
+}
+
+  .right-card .img-container{
+    width: 50%;
+    overflow: hidden;
+    
+  }
+
+  .right-card .img-container img{
+    max-width: 100%;
+    transition: .5s;
+    border-radius: 15px;
+  }
+
+  .right-card .img-container img:hover{
+    scale: 1.09;
+    cursor: pointer;
+  }
+

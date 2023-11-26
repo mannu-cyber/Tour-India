@@ -1,0 +1,417 @@
+@font-face {
+    font-family: a;
+    src: url(../fonts/Lightning\ Script.ttf);
+}
+
+@font-face {
+    font-family: b;
+    src: url(../fonts/b.ttf);
+}
+@font-face {
+    font-family: h;
+    src: url(../fonts/Fontspring-DEMO-proximanovacond-medium.otf);
+}
+@font-face {
+    font-family: p;
+    src: url(../fonts/Metropolis-Regular.otf);
+}
+:root{
+--para: rgba(255, 255, 255, 0.589);
+--fons:1.5vw;
+--pages-padding:10px 5vw;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  overflow-x: hidden;
+}
+
+.nav {
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+position: sticky;
+top: 0;
+left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav .logo img{
+    width: 150px;
+margin-left: 20px;
+}
+
+.main-nav ul {
+  /* display: flex; */
+  gap: 10px;
+}
+
+.main-nav ul,
+li,
+a {
+    display: flex;
+  font-size: 20px;
+  text-decoration: none;
+  margin-right: 20px;
+  color: black;
+  list-style: none;
+  position: relative;
+  bottom: 12px;
+  border: none ;
+}
+
+.main li a:hover{
+    border-bottom: 1px solid rgba(107, 3, 3, 0.776);
+    color: rgba(0, 0, 0, 0.619);
+}
+
+
+.hero{
+    display: flex;
+padding: 10px 5vw;
+}
+
+.left{
+    width: 50%;
+
+
+}
+.left h1{
+font-family: a;
+
+border: none;
+    font-size: 7vw;
+    text-transform: uppercase;
+font-weight: 1;
+color: rgba(2, 0, 0, 0.737);
+    line-height: 1.1;
+margin-top: 4vw;
+   
+}
+
+.right{
+    width: 50%;
+    overflow: hidden;
+}
+
+.right img{
+    max-width: 100%;
+border-radius: 50px;
+transition: .5s;
+filter:grayscale(1.9);
+
+}
+
+.right img:hover{
+    border-radius: 5px;
+ cursor: pointer;
+    transform: scale(1.09);
+    overflow: hidden;
+    filter: grayscale(0);
+}
+
+
+
+.hero2{
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    padding: 10px 5vw;
+    margin-top: 5vw;
+    position: relative;
+}
+
+.hero2-left {
+    width: 50%;
+    margin-top: 2vw;
+   position: relative;
+   top: 5vw;
+    overflow: hidden;
+    z-index: 2;
+    height: 70vh;
+}
+
+.hero2-left img{
+    max-width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.hero2-left:hover img{
+transform: scale(1.04);
+
+}
+
+.hero2-right{
+    width: 55%;
+    height: 72vh;
+    background-color: rgba(0, 0, 0, 0.822);
+    position: relative; position: absolute;
+
+    right: 5vw;
+}
+
+.hero2-right .content{
+    width: 50%;
+    position: relative;
+    left: 32%;
+    font-family: p;
+    font-size: var(--fons);
+    line-height: 1.2;
+    top: 20%;
+    color: var(--para);
+}
+.content h2{
+    margin-top: 2vw;
+    font-family: h;
+    margin-left: 5vw;
+}
+
+.page2{
+    padding: var(--pages-padding);
+    width: 100%;
+    margin-top: 2vw;
+    background-color: #3b3939;
+}
+
+.page2 h1{
+    font-size:50px ;
+    color: #fff4f4;
+    text-align: center;
+}
+
+.page2 p{
+    font-size: 2vw;
+    padding: 4vw 0;
+    font-family: p;
+    color: white;
+}
+
+.page2 span{
+    color: rgba(240, 83, 83, 0.854);
+    font-family: a;
+    font-size: 2.2vw;
+}
+
+.page2 .page2-img img{
+width: 100%;
+height: 70vh;
+}
+
+
+.swiper-page{
+    width: 100%;
+    height: 100vh;
+}
+
+.swiper {
+    width:70%;
+ height: 99vh;
+ display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin: 5vw 0;
+  }
+  
+  .swiper h3{
+    font-size: 2.5vw;
+    margin: 1vw 0;
+  }
+
+  .swiper h1{
+text-align: center;
+margin-bottom: 1vw;
+font-size: 4vw;
+color: #3b3939;
+font-family: "h";
+font-weight: 1;
+text-decoration:underline;
+
+  }
+
+
+  .swiper-slide {
+   
+    text-align: center;
+    font-size: 18px;
+    background: #ffffffbc;
+  
+  }
+
+  .swiper-slide img {
+    display: block;
+    margin: auto;
+    width: 100%;
+height: 60%;
+    object-fit: cover;
+  }
+
+  .swiper h2{
+    margin: 1vw 0;
+  }
+
+  .swiper a{
+    display: block;
+    margin: 10px auto;
+
+  }
+
+  .swiper a button{
+    font-size: 20px;
+padding: .5vw 2vw;
+margin: .5vw 0;
+  }
+
+
+  .swiper button:hover{
+    cursor: pointer;
+  }
+
+
+
+
+  .footer{
+
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #3b3939;
+    color: #fff4f4;
+
+    padding: var(--pages-padding);
+  }
+
+
+  .footer a{
+    color: #fff4f4;
+    letter-spacing: 1.3px;
+    transition: .3s;
+    text-decoration: none;
+    border: none  ;
+  }
+
+  .footer .contact a:hover{
+    color: #fff4f4a5;
+   border-bottom: .4px solid gray;
+  }
+
+.footer  .contact{
+  width: 25vw;
+  margin-top: 5vw;
+}
+ 
+.contact h1{
+  font-family: a;
+  text-decoration: underline;
+  font-weight: 1;
+  margin-bottom: 4vw;
+}
+
+.contact>a{
+  /* margin-top: 1vw; */
+  text-decoration: none;
+}
+
+  .footer .massage{
+    margin-top: 2vw;
+    
+  }
+
+
+
+  .stay-conected, .leave-massage{
+    margin-top: 5vw;
+    font-size: 1.4vw;
+    overflow: hidden;
+  }
+
+
+  .stay-conected p{
+    margin-bottom: 4vw;
+  }
+
+  .stay-conected{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    align-items: center;
+  position: relative;
+ 
+  }
+
+  .stay-conected a{
+    transition: .8s;
+    position: relative;
+    right: 10px;
+  }
+  
+
+  .stay-conected a:hover{
+    color: #fff4f4a5;
+    scale: 1.09;
+
+    
+  }
+
+
+  .leave-massage{
+    position: relative;
+    
+  }
+
+  form{
+    margin-top: 70px;
+    
+  }
+
+  .leave-massage input{
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: #3b3939;
+    /* line-height: 4.5; */
+    position: relative;
+    bottom: 20px;
+    transition: .5s;
+
+  }
+  
+
+  .leave-massage label{
+    position: relative;
+    right: 165px;
+    bottom: 20px;
+    font-size: 17px;
+    transition: .5s;
+  }
+
+  #massge, #subject{
+    margin-top: 35px;
+  }
+
+  .leave-massage input:focus {
+    outline: none;
+    background-color: #3b3939;
+    color: #fff4f4;
+   }
+
+   .leave-massage input:focus ~ label, input:valid ~ label {
+    position: relative;
+    bottom: 40px;
+    font-size: 15px;
+
+    background-color: #3b3939;
+   }
+   

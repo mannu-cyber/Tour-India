@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.main{
+    overflow-x:hidden ;
+
+}
+
+  .footer{
+
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #3b3939;
+    color: #fff4f4;
+
+    padding: var(--pages-padding);
+  }
+
+
+  .footer a{
+    color: #fff4f4;
+    letter-spacing: 1.3px;
+    transition: .3s;
+    text-decoration: none;
+    border: none  ;
+  }
+
+  .footer .contact a:hover{
+    color: #fff4f4a5;
+   border-bottom: .4px solid gray;
+  }
+
+.footer  .contact{
+  width: 25vw;
+  margin-top: 5vw;
+}
+ 
+.contact h1{
+  font-family: a;
+  text-decoration: underline;
+  font-weight: 1;
+  margin-bottom: 4vw;
+}
+
+.contact>a{
+  /* margin-top: 1vw; */
+  text-decoration: none;
+}
+
+  .footer .massage{
+    margin-top: 2vw;
+    
+  }
+
+
+
+  .stay-conected, .leave-massage{
+    margin-top: 5vw;
+    font-size: 1.4vw;
+    overflow: hidden;
+  }
+
+
+  .stay-conected p{
+    margin-bottom: 4vw;
+  }
+
+  .stay-conected{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    align-items: center;
+  position: relative;
+ 
+  }
+
+  .stay-conected a{
+    transition: .8s;
+    position: relative;
+    right: 10px;
+  }
+  
+
+  .stay-conected a:hover{
+    color: #fff4f4a5;
+    scale: 1.09;
+
+    
+  }
+
+
+  .leave-massage{
+    position: relative;
+    
+  }
+
+  form{
+    margin-top: 70px;
+    
+  }
+
+  .leave-massage input{
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: #3b3939;
+    /* line-height: 4.5; */
+    position: relative;
+    bottom: 20px;
+    transition: .5s;
+
+  }
+  
+
+  .leave-massage label{
+    position: relative;
+    right: 165px;
+    bottom: 20px;
+    font-size: 17px;
+    transition: .5s;
+  }
+
+  #massge, #subject{
+    margin-top: 35px;
+  }
+
+  .leave-massage input:focus {
+    outline: none;
+    background-color: #3b3939;
+    color: #fff4f4;
+   }
+
+   .leave-massage input:focus ~ label, input:valid ~ label {
+    position: relative;
+    bottom: 40px;
+    font-size: 15px;
+
+    background-color: #3b3939;
+   }
+   
+
+
+
